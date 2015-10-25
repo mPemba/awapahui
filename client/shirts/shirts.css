@@ -1,0 +1,40 @@
+/**/
+/*
+CSS CLASSES FOR SHIRT PAGE
+*/
+/**/
+
+.newShirt {
+  margin: 0 auto;
+}
+
+.shirtHeadline {
+  font-family: 'Infini';
+}
+
+.shirtInputLabel {
+  font-family: 'Infini';
+  font-size: 1rem;
+}
+
+.shirtNameInput {
+  border: none;
+  border-bottom: 1.5px solid #333333;
+  height: 35px;
+  width: 200px;
+  background: none;
+  color: #333333;
+  padding-left: 15px;
+  font-family: 'Infini';
+}
+
+.shirtNameInput:focus {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid red;
+}
+
+.shirtNameInput:hover {
+  boder: none;
+  border-bottom: 2px solid #112342;
+}

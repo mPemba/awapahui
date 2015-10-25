@@ -1,0 +1,22 @@
+<template name='navBar'>
+  <div class='navContainer'>
+    <ul>
+      <li class='navListItem'>
+        <a class='navLink' href='/'> HOME</a>
+      </li>
+      <li class='navListItem'>
+        <a class='navLink' href='/shirts'> SHIRTS</a>
+      </li>
+      <li class='navListItem'>
+        <a class='navLink' href='/contact'> CONTACT</a>
+      </li>
+
+      <li class='navListItem loginButtons'>{{> loginButtons}}</li>
+      <li class='navListItem'>
+        {{#if isInRole 'Administrator'}}
+          <a href='#'> Admin </a>
+        {{/if}}
+      </li>
+    </ul>
+  </div>
+</template>
