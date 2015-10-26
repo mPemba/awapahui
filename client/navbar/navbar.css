@@ -2,23 +2,174 @@
 ===========================================
 Styles for the NavBar.
 
+RED - #C21D28
+BLUE - #1566F1
+
 ===========================================
 */
-
-* {
-  outline: orange;
+/*  ««««« FOOD »»»»»  */
+/*  ««««« CONTACT »»»»»  */
+/*  «««««  »»»»»  */
+/*  ««««« HOME »»»»»  */
+.nav {
+  position: absolute;
+  top: 35px;
+  width: 100%;
 }
 
-.nav {
+.navContainer {
+  display: inline-block;
+  background: none;
+  width: 100%;
+  padding-left: 40px;
+}
+
+.navListItem {
+  /*width: 120px;
+  height: 45px;*/
+  position: relative;
+  display: inline-block;
+  background-color: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navLink {
+  width: 120px;
+  height: 45px;
+  font-family: 'Infini';
+  font-size: 1em;
+  color: #112342;
+  text-decoration: none;
+  border: 2px solid #112342;
+  padding-top: 8px;
+}
+.homeLink:hover {
+  border: 2px solid #FECC00;
+  background: #FECC00; /* YELLOW  */
+  color: #fff;
+}
+.shirtLink:hover {
+  border: 2px solid #1566F1;
+  background: #1566F1; /* BLUE  */
+  color: #fff;
+}
+.calendarLink:hover {
+  border: 2px solid #C21D28 ;
+  background: #C21D28; /* RED */
+  color: #fff;
+}
+.contactLink:hover {
+  border: 2px solid #59219F;
+  background: #59219F; /* PURPS */
+  color: #fff;
+}
+
+.loginButtons {
+  float: right;
+  border: none;
+  position: relative;
+  right: 30px;
+}
+
+/*  «««««««««««««««   SHIRT PAGE NAV BAR CLASSES   »»»»»»»»»»»»»»»  */
+
+.navBarShirtsPage {
+  position: absolute;
+  top: 35px;
+  width: 100%;
+}
+.navBarShirtsPage .navListItem {
+  color: #fff;
+  /*border: 2px solid #fff;*/
+}
+
+.navBarShirtsPage .navLink {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.navBarShirtsPage .loginButtons {
+  border: 0px;
+}
+
+.navBarShirtsPage .homeLink:hover {
+  border: 2px solid #FECC00;
+  background: #FECC00; /* YELLOW  */
+  color: #fff;
+}
+.navBarShirtsPage .shirtLink:hover {
+  border: 2px solid #FECC00;
+  background: #fff; /* BLUE  */
+  color: #1566F1;
+}
+.navBarShirtsPage .calendarLink:hover {
+  border: 2px solid #C21D28 ;
+  background: #C21D28; /* RED */
+  color: #fff;
+}
+.navBarShirtsPage .contactLink:hover {
+  border: 2px solid #59219F;
+  background: #59219F; /* PURPS */
+  color: #fff;
+}
+
+ /*   ««««««««« NAVBAR CONTACT PAGE  »»»»»»»»»   */
+
+.navBarContactPage {
+  position: absolute;
+  top: 35px;
+  width: 100%;
+}
+.navBarContactPage .navListItem {
+  color: #fff;
+}
+.navBarContactPage .navLink {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+
+
+
+
+
+/*  «««««  MOBILE CLASSES  »»»»»  */
+
+/*@media screen
+  and (min-device-width: 320px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .navListItem {
+      width: 45%;
+      height: 35%;
+      margin-bottom: 50px;
+      text-align: center;
+      display: block;
+    }
+
+    .navLink {
+      width: 100%;
+      font-size: 4rem;
+    }
+
+    .loginButtons {
+      float: none;
+      font-size: 4rem;
+    }
+
+
+  }*/
+
+/*.nav {
   margin-bottom: 20px;
 }
 
 .navContainer {
-  /*width: 100%;*/
+
   height: 200px;
-  /*position: fixed;
-  top: 0;
-  left: 0;*/
+
   background: #333333;
   border-bottom: 1px solid #11270B;
   margin-bottom: 20px;
@@ -58,4 +209,4 @@ Styles for the NavBar.
 .loginButtons {
   float: right;
   color: #DEDEDE;
-}
+}*/

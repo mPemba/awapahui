@@ -1,8 +1,30 @@
 <template name='contactPage'>
 
-<p> Contact page :) </p>
+<div class="contactPageContentContainer">
+  <div class='navBarContactPage'>
+    {{> navBar}}
+  </div>
 
-<input type='text' placeholder='go fuck yourself' />
-<input type='submit' />
+  <div class='contactForm'>
+    <div class="contactHeadline">CONTACT</div>
+    <div class="formContainer">
+      <label class='formLabel'>Name</label>
+      <input class='formField' type="text" placeholder="enter your name" />
+    </div>
+    <div class='formContainer'>
+      <label class='formLabel'>Email</label>
+      <input class='formField' type='text' placeholder="enter your email" />
+    </div>
+    <div class='formContainer'>
+      <label class='formLabel'>Question or Comment</label>
+      <textarea class='textArea' name="textarea" rows="10" cols="50" placeholder="michael will read this"></textarea>
+    </div>
 
+    <div class='formContainer'>
+      <input class='formField' type='submit' />
+    </div>
+  </div>
+
+
+</div>
 </template>

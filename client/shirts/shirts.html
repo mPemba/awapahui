@@ -1,52 +1,62 @@
 <template name="shirtsPage">
 
-<div>
-    <h1 class='shirtHeadline'> Create Shirt Order </h1>
-    <form class='newShirt'>
-          <input required type='radio' name='age' value='adult' />
-          <label class='shirtInputLabel'>Adult Size</label>
-          <br>
-          <input required type='radio' name='age' value='child' />
-          <label class='shirtInputLabel'>Child Size</label>
-          <br>
-          <br>
-          <label class='shirtInputLabel'>Name of Awapahui champion</label>
-          <br>
-          <input class='shirtNameInput' required type='text' name='name' placeholder='name' />
-          <br>
-          <br>
-          <input required type='radio' name='gender' value='female' />
-          <label class='shirtInputLabel'>Female</label>
-          <br>
-          <input required type='radio' name='gender' value='male' />
-          <label class='shirtInputLabel'>Male</label>
-          <br>
-          <br>
-          <label class='shirtInputLabel'>Size: </label>
+<div class="shirtContentContainer">
 
-          <input required type='radio' name='size' value='small' />
-          <label class='shirtInputLabel'>Small</label>
+  <div class='navBarShirtsPage'>
+      {{> navBar}}
+  </div>
 
-          <input required type='radio' name='size' value='medium' />
-          <label class='shirtInputLabel'>Medium</label>
+  <div class='shirtOrderFormContainer'>
+      <h1 class='shirtHeadline'> Create Shirt Order </h1>
+      <form class='newShirt'>
+            <input required type='radio' name='age' value='adult' />
+            <label class='shirtInputLabel'>Adult Size</label>
+            <br>
+            <input required type='radio' name='age' value='child' />
+            <label class='shirtInputLabel'>Child Size</label>
+            <br>
+            <br>
+            <label class='shirtInputLabel'>Name of Awapahui champion</label>
+            <br>
+            <input class='shirtNameInput' required type='text' name='name' placeholder='name' />
+            <br>
+            <br>
+            <input required type='radio' name='gender' value='female' />
+            <label class='shirtInputLabel'>Female</label>
+            <br>
+            <input required type='radio' name='gender' value='male' />
+            <label class='shirtInputLabel'>Male</label>
+            <br>
+            <br>
+            <label class='shirtInputLabel'>Size: </label>
 
-          <input required type='radio' name='size' value='large' />
-          <label class='shirtInputLabel'>Large</label>
+            <input required type='radio' name='size' value='small' />
+            <label class='shirtInputLabel'>Small</label>
 
-          <input required type='radio' name='size' value='X-Large' />
-          <label class='shirtInputLabel'>X-L</label>
+            <input required type='radio' name='size' value='medium' />
+            <label class='shirtInputLabel'>Medium</label>
 
-          <input required type='radio' name='size' value='XX-Large' />
-          <label class='shirtInputLabel'>XX-L</label>
-          <br>
-          <br>
-          <input required class='btn' type='submit' name='submit' value='Add to Cart' />
-    </form>
+            <input required type='radio' name='size' value='large' />
+            <label class='shirtInputLabel'>Large</label>
+
+            <input required type='radio' name='size' value='X-Large' />
+            <label class='shirtInputLabel'>X-L</label>
+
+            <input required type='radio' name='size' value='XX-Large' />
+            <label class='shirtInputLabel'>XX-L</label>
+            <br>
+            <br>
+            <input required class='btn' type='submit' name='submit' value='Add to Cart' />
+      </form>
+  </div>
+  <div class=shoppingCartContainer>
+      <h1 class="cartHeadline">CART</h1>
+      <ul>
+        {{#each shirts}}
+          {{> shirt}}
+        {{/each}}
+      </ul>
+  </div>
+
 </div>
-<h1>shirt list</h1>
-<ul>
-  {{#each shirts}}
-    {{> shirt}}
-  {{/each}}
-</ul>
 </template>

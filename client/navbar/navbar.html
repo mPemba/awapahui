@@ -1,22 +1,30 @@
+
+
 <template name='navBar'>
   <div class='navContainer'>
-    <ul>
-      <li class='navListItem'>
-        <a class='navLink' href='/'> HOME</a>
-      </li>
-      <li class='navListItem'>
-        <a class='navLink' href='/shirts'> SHIRTS</a>
-      </li>
-      <li class='navListItem'>
-        <a class='navLink' href='/contact'> CONTACT</a>
-      </li>
 
-      <li class='navListItem loginButtons'>{{> loginButtons}}</li>
-      <li class='navListItem'>
+    <div>
+      <a href='/' class="navListItem">
+        <div class='navLink homeLink'> HOME </div>
+      </a>
+      <a href='/shirts' class="navListItem">
+        <div class='navLink shirtLink'> SHIRTS </div>
+      </a>
+      <a href='/calendar' class="navListItem">
+        <div class="navLink calendarLink"> CALENDAR </div>
+      </a>
+      <a href='/contact' class="navListItem">
+        <div class="navLink contactLink"> CONTACT </div>
+      </a>
+      <div class="navListItem loginButtons">{{> loginButtons}}</div>
+
+      <div class='navListItem'>
         {{#if isInRole 'Administrator'}}
-          <a href='#'> Admin </a>
+          <a href="/admin" class="navLink">ADMIN</a>
         {{/if}}
-      </li>
-    </ul>
+      </div>
+
+    </div>
   </div>
+
 </template>

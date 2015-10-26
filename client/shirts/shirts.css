@@ -1,8 +1,29 @@
 /**/
 /*
+=============================================
 CSS CLASSES FOR SHIRT PAGE
+
+  —shirts nav bar classes are in navbar.css
+  —Code and design by Mic Slayer
+=============================================
 */
 /**/
+
+.shirtOrderFormContainer {
+  float: left;
+  width: 45%;
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.shirtContentContainer {
+  width: 100%;
+  height: 1000px;
+  padding-top: 165px;
+  background: #1566F1;
+  display: inline-block;
+}
 
 .newShirt {
   margin: 0 auto;
@@ -10,20 +31,25 @@ CSS CLASSES FOR SHIRT PAGE
 
 .shirtHeadline {
   font-family: 'Infini';
+  color: #fff;
+  width: 100%;
+  border-bottom: 2px solid #FFF;
+  margin-bottom: 22px;
 }
 
 .shirtInputLabel {
   font-family: 'Infini';
   font-size: 1rem;
+  color: #fff;
 }
 
 .shirtNameInput {
   border: none;
-  border-bottom: 1.5px solid #333333;
+  border-bottom: 1.5px solid #fff;
   height: 35px;
   width: 200px;
   background: none;
-  color: #333333;
+  color: #fff;
   padding-left: 15px;
   font-family: 'Infini';
 }
@@ -31,10 +57,57 @@ CSS CLASSES FOR SHIRT PAGE
 .shirtNameInput:focus {
   outline: none;
   border: none;
-  border-bottom: 2px solid red;
+  border: 2px solid #FECC00;
 }
 
 .shirtNameInput:hover {
   boder: none;
-  border-bottom: 2px solid #112342;
+  border: 2px solid #112342;
 }
+
+.singleShirtItem {
+  color: #112342;
+  font-family: 'Infini';
+}
+
+
+
+/*  «««««««««««««««   SHOPPING CART CLASSES   »»»»»»»»»»»»»»»  */
+
+.shoppingCartContainer {
+  float: right;
+  width: 45%;
+  height: 500px;
+  margin-right: 40px;
+  padding: 20px;
+  overflow: auto;
+  display: inline-block;
+  border: 2px solid #FFF;
+  background: #FFF;
+}
+
+.cartHeadline {
+  color: #1566F1;
+  font-family: 'Infini';
+  margin-bottom: 22px;
+  border-bottom: 2px solid #1566F1;
+}
+
+/*
+@media screen
+  and (min-device-width: 700px)
+  and (max-device-width: 1200px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .shirtOrderFormContainer {
+      float: none;
+      width: 100%;
+    }
+
+    .shoppingCartContainer {
+      float: none;
+      width: 100%;
+    }
+
+
+  }*/
