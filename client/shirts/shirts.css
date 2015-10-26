@@ -5,9 +5,33 @@ CSS CLASSES FOR SHIRT PAGE
 
   —shirts nav bar classes are in navbar.css
   —Code and design by Mic Slayer
+
+  RED - #C21D28
+  BLUE - #1566F1
+  lightGRAY #D7D7DB
+  YELLOW -  #FECC00;
+  lightBLUE - #1566F1
+  PURPS - #59219F;
 =============================================
 */
 /**/
+
+.shirtContentContainer {
+  width: 100%;
+  height: 1000px;
+  padding-top: 150px;
+  background: #D7D7DB;
+  display: inline-block;
+}
+
+.shirtMainHeadline {
+  color: #1566F1;
+  font-family: 'Infini';
+  font-size: 3rem;
+  border-bottom: 2px solid #1566F1;
+  padding-left: 18%;
+  margin-bottom: 22px;
+}
 
 .shirtOrderFormContainer {
   float: left;
@@ -17,39 +41,31 @@ CSS CLASSES FOR SHIRT PAGE
   margin-top: 20px;
 }
 
-.shirtContentContainer {
-  width: 100%;
-  height: 1000px;
-  padding-top: 165px;
-  background: #1566F1;
-  display: inline-block;
-}
-
 .newShirt {
   margin: 0 auto;
 }
 
 .shirtHeadline {
   font-family: 'Infini';
-  color: #fff;
+  color: #1566F1;
   width: 100%;
-  border-bottom: 2px solid #FFF;
+  border-bottom: 2px solid #1566F1;
   margin-bottom: 22px;
 }
 
 .shirtInputLabel {
   font-family: 'Infini';
   font-size: 1rem;
-  color: #fff;
+  color: #1566F1;
 }
 
 .shirtNameInput {
   border: none;
-  border-bottom: 1.5px solid #fff;
+  border-bottom: 1.5px solid #1566F1;
   height: 35px;
   width: 200px;
   background: none;
-  color: #fff;
+  color: #1566F1;
   padding-left: 15px;
   font-family: 'Infini';
 }
@@ -57,18 +73,37 @@ CSS CLASSES FOR SHIRT PAGE
 .shirtNameInput:focus {
   outline: none;
   border: none;
-  border: 2px solid #FECC00;
+  border: 2px solid #1566F1;
 }
 
 .shirtNameInput:hover {
   boder: none;
-  border: 2px solid #112342;
+  border: 2px solid #C21D28;
 }
 
 .singleShirtItem {
-  color: #112342;
+  color: #1566F1;
   font-family: 'Infini';
 }
+
+/*input[type=radio]:checked {
+  background: #D7D7DB;
+  width: 30px;
+  height: 30px;
+}
+
+input[type="radio"] + span::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.25em;
+  border-radius: 1em;
+  border: 0.125em solid #fff;
+  box-shadow: 0 0 0 0.15em #000;
+  margin-right: 0.75em;
+  transition: 0.5s ease all;
+}*/
 
 
 
@@ -83,7 +118,7 @@ CSS CLASSES FOR SHIRT PAGE
   overflow: auto;
   display: inline-block;
   border: 2px solid #FFF;
-  background: #FFF;
+  /*background: #FFF;*/
 }
 
 .cartHeadline {

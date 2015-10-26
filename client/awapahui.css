@@ -1,4 +1,13 @@
 /*
+««««««««««««««««««««« PRIMARY STYLESHEET »»»»»»»»»»»»»»»»»»»»»
+
+RED - #C21D28
+BLUE - #1566F1
+lightGRAY #D7D7DB
+YELLOW -  #FECC00;
+lightBLUE - #1566F1
+PURPS - #59219F;
+
 @font-face src reasons:
  .eot - IE9
  .eot?#iefix - IE6 - IE8
@@ -6,8 +15,6 @@
  .woff - Pretty Modern Browsers
  .ttf - Safari, Android, iOS
  .svg - Legacy iOS
-
-
  */
 
  * {
@@ -47,8 +54,8 @@
 .mainLayoutHeadline {
   width: 50%;
   position: absolute;
-  top: 72%;
-  left: 5%;
+  top: 2%;
+  left: 3%;
   color: #fff;
   font-size: 114px;
   font-family: 'Infini';
@@ -56,25 +63,26 @@
 
 
 /*  ««««« CONTACT PAGE CLASSES  »»»»»  */
-
+/* see navbar.css for contact nav */
 .contactPageContentContainer {
   width: 100%;
   height: 1000px;
-  background: #59219F;
+  background: #D7D7DB;
   padding-top: 150px;
-
-}
-
-.contactForm {
-  /*text-align: center;*/
-  width: 70%;
-  margin: 0 auto;
 }
 
 .contactHeadline {
-  color: #fff;
+  color: #59219F;
   font-family: 'Infini';
   font-size: 3rem;
+  border-bottom: 2px solid #59219F;
+  padding-left: 18%;
+  margin-bottom: 22px;
+}
+
+.contactForm {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .formContainer {
@@ -82,28 +90,65 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  padding-left: 18%;
 }
 
 .formLabel {
   font-family: 'Infini';
   font-size: 2rem;
-  color: #fff;
+  color: #59219F;
 }
 
 .formField {
   width: 200px;
   height: 35px;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #59219F;
+  color: #59219F;
   background: none;
+  font-size: 1rem;
+}
+
+.formField:focus {
+  outline: none;
+  border: 2px solid #59219F;
+}
+
+.formSubmit {
   margin-top: 20px;
+}
+
+.formSubmit:hover {
+  border: 2px solid #FECC00;
+  background: #59219F;
+  color: #D7D7DB
 }
 
 .textArea {
   width: 500px;
   height: auto;
   background: none;
-  border: 2px solid #fff;
+  border: 2px solid #59219F;
+  font-size: 1rem;
+}
+
+
+/*  ««««« CALENDAR PAGE CLASSES  »»»»»  */
+/* see navbar.css for calendar nav */
+
+
+.calendarPageContentContainer {
+  width: 100%;
+  height: 1000px;
+  background: #D7D7DB;
+  padding-top: 150px;
+}
+
+.calendarHeadline {
+  padding-left: 18%;
+  color: #C21D28;
+  font-family: 'Infini';
+  font-size: 3rem;
+  border-bottom: 2px solid #C21D28;
 }
 
 
