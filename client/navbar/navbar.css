@@ -7,202 +7,94 @@ BLUE - #1566F1
 lightGRAY #D7D7DB
 YELLOW -  #FECC00;
 lightBLUE - #1566F1
-PURPS - #59219F;
 ===========================================
 */
 /*  ««««« FOOD »»»»»  */
 /*  ««««« CONTACT »»»»»  */
 /*  «««««  »»»»»  */
 /*  ««««« HOME »»»»»  */
-/** {outline: 1px dotted blue}*/
+/** {
+  outline: 1px dotted #F3CA40;
+}*/
+
 .nav {
-  position: absolute;
-  top: 32%;
   width: 100%;
+  height: auto;
+  position: inline-block;
 }
 
 .navContainer {
-  display: inline-block;
-  background: none;
   width: 100%;
-  padding-left: 35px;
+  height: 90px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  margin-right: 30px;
+  background: hsla(200, 3%, 82%, 0.5);
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  display: inline-block;
+  border-top: 1px solid hsla(26, 5%, 28%, 1);
 }
 
 .navListItem {
   position: relative;
   display: inline-block;
-  background-color: none;
-  text-align: center;
+  color: hsla(26, 5%, 28%, 1);
+  margin: 35px;
   text-decoration: none;
+}
+
+.navListItem:hover {
+  border-bottom: hsla(40, 0%, 100%);
 }
 
 .navLink {
-  width: 120px;
-  height: 45px;
-  font-family: 'Infini';
-  font-size: 1em;
-  color: #112342;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 500;
   text-decoration: none;
-  border: 2px solid #112342;
-  padding-top: 8px;
-}
-.homeLink:hover {
-  border: 2px solid #1566F1; /* BLUE  */
-  background: #FECC00; /* YELLOW  */
-  color: #fff;
-}
-.shirtLink:hover {
-  border: 2px solid #C21D28; /* RED */
-  background: #1566F1; /* BLUE  */
-  color: #fff;
-}
-.calendarLink:hover {
-  border: 2px solid #FECC00; /* YELLOW  */
-  background: #C21D28; /* RED */
-  color: #fff;
-}
-.contactLink:hover {
-  border: 2px solid #C21D28; /* RED */
-  background: #59219F; /* PURPS */
-  color: #fff;
 }
 
-.loginButtons {
+.navLink:hover {
+  opacity: 0.3;
+}
+
+.homeLink {
+  font-family: 'Infini';
+  color: hsla(26, 5%, 28%, 1);;
+  float: left;
+  position: relative;
+  margin-top: 20px;
+}
+
+#loginButtonsContainer {
   float: right;
-  border: none;
-  position: relative;
-  font-size: 1.5rem;
-  right: 150px;
-  top: -150px;
+  margin: 35px 20px 0px 0px;
+
 }
+
+#login-buttons {
+  color: hsl(26, 5%, 28%, 1);
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#login-dropdown-list {
+  position: relative;
+
+}
+
 .loginButtons div a {
-    text-decoration: none;
-}
-/*  «««««««««««««««   SHIRT PAGE NAV BAR CLASSES   »»»»»»»»»»»»»»»  */
 
-.navBarShirtsPage {
-  position: absolute;
-  top: 35px;
-  width: 100%;
-}
-.navBarShirtsPage .navListItem {
-  color: #1566F1;
-  /*border: 2px solid #fff;*/
 }
 
-.navBarShirtsPage .navLink {
-  color: #1566F1;
-  border: 2px solid #1566F1;
-}
-
-.navBarShirtsPage .loginButtons {
-  border: 0px;
+.adminLink {
+  width: auto;
+  height: auto;
   position: relative;
-  top: 0;
+  display: inline-block;
 }
-
-.navBarShirtsPage .homeLink:hover {
-  border: 2px solid #1566F1; /* BLUE  */
-  background: #FECC00; /* YELLOW  */
-  color: #fff; /* BLUE  */
-}
-.navBarShirtsPage .shirtLink:hover {
-  border: 2px solid #FECC00;
-  background: #1566F1; /* BLUE  */
-  color: #fff;
-}
-.navBarShirtsPage .calendarLink:hover {
-  border: 2px solid #FECC00; /* YELLOW  */
-  background: #C21D28; /* RED */
-  color: #fff;
-}
-.navBarShirtsPage .contactLink:hover {
-  border: 2px solid #C21D28; /* RED */
-  background: #59219F; /* PURPS */
-  color: #fff;
-}
-
- /*   ««««««««« NAVBAR CONTACT PAGE  »»»»»»»»»   */
-
-.navBarContactPage {
-  position: absolute;
-  top: 35px;
-  width: 100%;
-}
-.navBarContactPage .navListItem {
-  color: #59219F;
-}
-.navBarContactPage .navLink {
-  color: #59219F;
-  border: 2px solid #59219F;
-}
-
-.navBarContactPage .homeLink:hover {
-  border: 2px solid #1566F1; /* BLUE  */
-  background: #FECC00; /* YELLOW  */
-  color: #fff; /* BLUE  */
-}
-.navBarContactPage .shirtLink:hover {
-  border: 2px solid #FECC00;
-  background: #1566F1; /* BLUE  */
-  color: #fff;
-}
-.navBarContactPage .calendarLink:hover {
-  border: 2px solid #FECC00; /* YELLOW  */
-  background: #C21D28; /* RED */
-  color: #fff;
-}
-.navBarContactPage .contactLink:hover {
-  border: 2px solid #C21D28; /* RED */
-  background: #59219F; /* PURPS */
-  color: #fff;
-}
-
-.navBarContactPage .loginButtons {
-  top: 0px;
-}
-
-
-/* ««««««««« NAVBAR CALENDAR PAGE  »»»»»»»»»*/
-
-.navBarCalendarPage {
- position: absolute;
- top: 35px;
- width: 100%;
-}
-.navBarCalendarPage .navListItem {
- color: #C21D28;
-}
-.navBarCalendarPage .navLink {
- color: #C21D28;
- border: 2px solid #C21D28;
-}
-
-.navBarCalendarPage .homeLink:hover {
- border: 2px solid #1566F1; /* BLUE  */
- background: #FECC00; /* YELLOW  */
- color: #fff; /* BLUE  */
-}
-.navBarCalendarPage .shirtLink:hover {
- border: 2px solid #FECC00;
- background: #1566F1; /* BLUE  */
- color: #fff;
-}
-.navBarCalendarPage .calendarLink:hover {
- border: 2px solid #FECC00; /* YELLOW  */
- background: #C21D28; /* RED */
- color: #fff;
-}
-.navBarCalendarPage .contactLink:hover {
- border: 2px solid #C21D28; /* RED */
- background: #59219F; /* PURPS */
- color: #fff;
-}
-
-.navBarCalendarPage .loginButtons {
-  top: 0px;
-}
-
 
 
 /*  «««««  MOBILE CLASSES  »»»»»  */

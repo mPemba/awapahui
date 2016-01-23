@@ -6,7 +6,6 @@ BLUE - #1566F1
 lightGRAY #D7D7DB
 YELLOW -  #FECC00;
 lightBLUE - #1566F1
-PURPS - #59219F;
 
 @font-face src reasons:
  .eot - IE9
@@ -23,8 +22,10 @@ PURPS - #59219F;
    /*outline: 1px dotted blue;*/
  }
 
- html {
+ html, body {
    width: 100%;
+   min-width: 630px;
+   background: hsla(60, 2%, 79%, 1);
  }
 
 
@@ -49,16 +50,10 @@ PURPS - #59219F;
   background-image: url('/images/redfishMalibuTwo.JPG');
   background-size: cover;
   background-repeat: no-repeat;
+  /*background: hsla(213, 30%, 32%, 1);*/
 }
 
 .mainLayoutHeadline {
-  width: 50%;
-  position: absolute;
-  top: 2%;
-  left: 3%;
-  color: #fff;
-  font-size: 114px;
-  font-family: 'Infini';
 }
 
 
@@ -68,14 +63,12 @@ PURPS - #59219F;
   width: 100%;
   height: 1000px;
   background: #D7D7DB;
-  padding-top: 150px;
+  padding-top: 50px;
 }
 
 .contactHeadline {
-  color: #59219F;
   font-family: 'Infini';
   font-size: 3rem;
-  border-bottom: 2px solid #59219F;
   padding-left: 18%;
   margin-bottom: 22px;
 }
@@ -96,21 +89,17 @@ PURPS - #59219F;
 .formLabel {
   font-family: 'Infini';
   font-size: 2rem;
-  color: #59219F;
 }
 
 .formField {
   width: 200px;
   height: 35px;
-  border: 2px solid #59219F;
-  color: #59219F;
   background: none;
   font-size: 1rem;
 }
 
 .formField:focus {
   outline: none;
-  border: 2px solid #59219F;
 }
 
 .formSubmit {
@@ -119,7 +108,7 @@ PURPS - #59219F;
 
 .formSubmit:hover {
   border: 2px solid #FECC00;
-  background: #59219F;
+  background: #112342;
   color: #D7D7DB
 }
 
@@ -127,7 +116,6 @@ PURPS - #59219F;
   width: 500px;
   height: auto;
   background: none;
-  border: 2px solid #59219F;
   font-size: 1rem;
 }
 
@@ -182,4 +170,54 @@ PURPS - #59219F;
     }
 
 
-  }*/
+  }
+
+
+
+
+
+STYLES FOR NICE BUTTONS
+
+
+.navListItem {
+  width: 200px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100px;
+  background: hsla(40, 0%, 100%, 0.3);
+  padding: 5px;
+  margin: 5px;
+  float: right;
+  text-align: center;
+}
+
+.navListItem:hover {
+  background: hsla(40, 0%, 100%, 0.5);
+}
+
+.navLink {
+  font-size: 18px;
+  font-family: 'Infini';
+  color: #fff;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  */
