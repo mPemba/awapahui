@@ -1,0 +1,40 @@
+<template name='navBar'>
+
+  <div class="mobileTopNavBar">
+
+    <a href='/' class="homeLinkContainerTop">
+      <h1 class='homeLink'> AWAPAHUI </h1>
+    </a>
+
+    <span id="loginButtonsContainerTop">{{> loginButtons}}</span>
+
+  </div>
+
+  <div class='navContainer'>
+
+      <a href='/' class="homeLinkContainerBottom">
+        <h1 class='homeLink'> AWAPAHUI </h1>
+      </a>
+
+      <a href='/shirts' class="navListItem">
+        <div class='navLink shirtLink'> SHIRTS </div>
+      </a>
+
+      <a href='/calendar' class="navListItem">
+        <div class="navLink calendarLink"> CALENDAR </div>
+      </a>
+
+      <a href='/contact' class="navListItem">
+        <div class="navLink contactLink"> CONTACT </div>
+      </a>
+
+      <span id="loginButtonsContainerBottom">{{> loginButtons}}</span>
+
+      <!-- <span class='navListItem adminLink'>
+        {{#if isInRole 'Administrator'}}
+          <a href="/admin" class="navLink">ADMIN</a>
+        {{/if}}
+      </span> -->
+  </div>
+
+</template>

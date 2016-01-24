@@ -1,0 +1,125 @@
+/**/
+/*
+=============================================
+CSS CLASSES FOR SHIRT PAGE
+
+  —shirts nav bar classes are in navbar.css
+  —Code and design by Mic Slayer
+
+=============================================
+*/
+/**/
+
+.shirtContentContainer {
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
+  background: hsla(200, 3%, 82%, 1);
+  display: inline-block;
+}
+
+.shirtMainHeadline {
+  color: hsla(213, 30%, 32%, 1);
+  font-family: 'Infini';
+  font-size: 3rem;
+  border-bottom: 2px solid hsla(213, 30%, 32%, 1);
+  padding-left: 5%;
+  margin-bottom: 22px;
+}
+
+.shirtOrderFormContainer {
+  float: left;
+  width: 45%;
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.newShirt {
+  margin: 0 auto;
+}
+
+.shirtHeadline {
+  font-family: 'Infini';
+  color: hsla(213, 30%, 32%, 1);
+  width: 100%;
+  border-bottom: 2px solid hsla(213, 30%, 32%, 1);
+  margin-bottom: 22px;
+}
+
+.shirtInputLabel {
+  font-family: 'Infini';
+  font-size: 1rem;
+  color: hsla(213, 30%, 32%, 1);
+}
+
+.shirtNameInput {
+  border: none;
+  border-bottom: 1.5px solid hsla(213, 30%, 32%, 1);
+  height: 35px;
+  width: 200px;
+  background: none;
+  color: hsla(213, 30%, 32%, 1);
+  padding-left: 15px;
+  font-family: 'Infini';
+}
+
+.shirtNameInput:focus {
+  outline: none;
+  border: none;
+  border: 2px solid #fff;
+}
+
+.shirtNameInput:hover {
+  boder: none;
+  border: 2px solid #fff;
+}
+
+.singleShirtItem {
+  color: hsla(213, 30%, 32%, 1);
+  font-family: 'Infini';
+}
+
+
+/*  «««««««««««««««   SHOPPING CART CLASSES   »»»»»»»»»»»»»»»  */
+
+.shoppingCartContainer {
+  float: right;
+  width: 45%;
+  height: 500px;
+  margin-right: 40px;
+  padding: 20px;
+  overflow: auto;
+  display: inline-block;
+  border: 2px solid #FFF;
+  /*background: #FFF;*/
+}
+
+.cartHeadline {
+  color: hsla(213, 30%, 32%, 1);
+  font-family: 'Infini';
+  margin-bottom: 22px;
+  border-bottom: 2px solid hsla(213, 30%, 32%, 1);
+}
+
+
+@media screen
+  /*and (min-device-width: 320px)*/
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2)  {
+
+    .shirtFormsContainer {
+      display: inline-block;
+    }
+
+    .shoppingCartContainer {
+      width: 80%;
+      display: inline-block;
+    }
+
+    .shirtOrderFormContainer {
+      width: 80%;
+      display: inline-block;
+    }
+
+  }

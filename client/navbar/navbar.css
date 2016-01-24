@@ -1,0 +1,301 @@
+/*
+===========================================
+Styles for the NavBar.
+
+nice light green: #94B58B
+===========================================
+*/
+
+/** {
+  outline: 1px dotted #F3CA40;
+}*/
+
+.nav {
+  width: 100%;
+  height: auto;
+  position: inline-block;
+}
+
+.navContainer {
+  width: 100%;
+  height: 90px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  margin-right: 30px;
+  background: hsla(200, 3%, 82%, 0.5);
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  display: inline-block;
+  border-top: 1px solid hsla(26, 5%, 28%, 1);
+}
+
+.navListItem {
+  position: relative;
+  display: inline-block;
+  color: hsla(26, 5%, 28%, 1);
+  margin: 35px;
+  text-decoration: none;
+}
+
+.navListItem:hover {
+  border-bottom: hsla(40, 0%, 100%, 1);
+}
+
+.navLink {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  opacity: 0.3;
+}
+
+.mobileTopNavBar {
+  display: none;
+}
+
+.homeLink {
+  font-family: 'Infini';
+  color: hsla(26, 5%, 28%, 1);;
+  float: left;
+  position: relative;
+  margin-top: 20px;
+}
+
+/*  THESE STYLES CONTROL THE AUTO LOGIN BOX  */
+
+#loginButtonsContainer {
+  float: right;
+  margin: 35px 20px 0px 0px;
+
+}
+
+#login-buttons {
+  color: hsl(26, 5%, 28%, 1);
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#login-dropdown-list {
+  width: 75%;
+  height: 65%;
+  border: 1px solid hsl(26, 5%, 28%, 1);
+  border-radius: 5px;
+  margin: 0 auto;
+  position: fixed;
+  float: none;
+  top: 100px;
+  left: 15%;
+  color: #fff;
+  background: hsla(213, 30%, 32%, 1);
+  padding: 25px;
+}
+
+#login-buttons .login-close-text {
+  font-size: 16px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.login-form .login-password-form {
+  height: 90%;
+  text-align: center;
+}
+
+#login-email-label-and-input, #login-password-label-and-input {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 15px auto 15px auto;
+}
+
+#login-email-label, #login-password-label {
+   font-size: 25px;
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 500;
+   display: block;
+}
+
+#login-email, #login-password {
+  width: 75%;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 100px;
+  border: 1px solid #929598;
+  display: inline-block;
+}
+
+.accounts-dialog input[type=email],  #login-buttons input[type=email] {
+  border-radius: 100px;
+  background: hsla(0, 0%, 100%, 0.1);
+}
+
+.accounts-dialog input[type=password], #login-buttons input[type=password] {
+  border-radius: 100px;
+  background: hsla(0, 0%, 100%, 0.1);
+}
+
+.loginButtons div a {
+
+}
+
+#login-screen .dropdown-menu {
+  display: block;
+  position: relative;
+  height: 245px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+#login-buttons .login-button, .accounts-dialog .login-button {
+  width: 75%;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 100px;
+  border: 1px solid #929598;
+  display: inline-block;
+  background: #94B58B;
+  border-radius: 100px;
+  margin: 30px 12% 30px 12%;
+  padding: 3%;
+}
+
+#login-buttons .login-button:hover, .accounts-dialog .login-button:hover {
+  background: #94B58B;
+  opacity: 0.7;
+}
+
+#login-buttons #forgot-password-link, #login-buttons #signup-link, #login-buttons #back-to-login-link {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+
+
+.adminLink {
+  width: auto;
+  height: auto;
+  position: relative;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  «««««  MOBILE CLASSES  »»»»»  */
+
+@media screen
+  /*and (min-device-width: 320px)*/
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .navContainer {
+      width: 100%;
+      height: 10%;
+      background: hsla(200, 3%, 82%, 1);
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      display: inline-block;
+      border-top: 1px solid hsla(26, 5%, 28%, 1);
+    }
+
+    .mobileTopNavBar {
+      width: 100%;
+      height: 10%;
+      background: hsla(200, 3%, 82%, 1);
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      display: inline-block;
+      border-bottom: 1px solid hsla(26, 5%, 28%, 1);
+    }
+
+    .navListItem {
+      width: 33%;
+      height: 100%;
+      position: relative;
+      display: inline-block;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      border-bottom: 1px solid #939598;
+    }
+
+    .navLink {
+      font-size: 3em;
+    }
+
+    #loginButtonsContainerTop {
+      width: 40%;
+      height: 100%;
+      position: relative;
+      display: inline-block;
+      float: right;
+    }
+
+    #loginButtonsContainerBottom {
+      display: none;
+    }
+
+    #login-buttons {
+      width: 100%;
+      height: 15%;
+      position: relative;
+      display: block;
+      top: 65px;
+      margin-left: 35%;
+      font-size: 3em;
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .homeLinkContainerTop {
+      width: 40%;
+      height: 100%;
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      border-bottom: 1px solid #939598;
+      padding: 3%;
+      margin-right: 35px;
+    }
+
+    .homeLinkContainerBottom {
+      display: none;
+    }
+
+    .homeLink {
+      width: 100%;
+      height: auto;
+      font-family: 'Infini';
+      font-size: 3em;
+      color: hsla(26, 5%, 28%, 1);;
+      position: relative;
+      margin: 30px auto 30px auto;
+      text-align: center;
+    }
+
+
+  }
