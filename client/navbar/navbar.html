@@ -1,8 +1,18 @@
 <template name='navBar'>
 
+  <div class="mobileTopNavBar">
+
+    <a href='/' class="homeLinkContainerTop">
+      <h1 class='homeLink'> AWAPAHUI </h1>
+    </a>
+
+    <span id="loginButtonsContainerTop">{{> loginButtons}}</span>
+
+  </div>
+
   <div class='navContainer'>
 
-      <a href='/' class="">
+      <a href='/' class="homeLinkContainerBottom">
         <h1 class='homeLink'> AWAPAHUI </h1>
       </a>
 
@@ -18,7 +28,7 @@
         <div class="navLink contactLink"> CONTACT </div>
       </a>
 
-      <span id="loginButtonsContainer">{{> loginButtons}}</span>
+      <span id="loginButtonsContainerBottom">{{> loginButtons}}</span>
 
       <!-- <span class='navListItem adminLink'>
         {{#if isInRole 'Administrator'}}
