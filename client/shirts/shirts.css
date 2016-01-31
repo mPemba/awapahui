@@ -8,13 +8,12 @@ CSS CLASSES FOR SHIRT PAGE
 
 =============================================
 */
-/**/
 
 .shirtContentContainer {
   width: 100%;
-  height: 100%;
-  padding-top: 10%;
-  background: hsla(200, 3%, 82%, 1);
+  height: auto;
+  padding-top: 3%;
+  background: hsla(200, 3%, 82%, 0.7);
   display: inline-block;
 }
 
@@ -102,24 +101,49 @@ CSS CLASSES FOR SHIRT PAGE
   border-bottom: 2px solid hsla(213, 30%, 32%, 1);
 }
 
+@media screen
+  and (min-device-width: 320px)
+  and (max-device-width: 800px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .shoppingCartContainer {
+
+    }
+
+  }
 
 @media screen
-  /*and (min-device-width: 320px)*/
+  and (min-device-width: 320px)
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 2)  {
 
+    .shirtContentContainer {
+      padding-top: 20%;
+    }
+
     .shirtFormsContainer {
       display: inline-block;
+      width: 100%;
+      height: auto;
+      overflow: scroll;
     }
 
     .shoppingCartContainer {
       width: 80%;
       display: inline-block;
+      clear: both;
+      margin-top: 2%;
+      margin-left: 5%;
+      float: none;
     }
 
     .shirtOrderFormContainer {
       width: 80%;
       display: inline-block;
+    }
+
+    .shirtInputLabel {
+      margin-right: 8px;
     }
 
   }
