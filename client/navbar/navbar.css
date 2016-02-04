@@ -46,6 +46,7 @@ nice light green: #94B58B
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 500;
   text-decoration: none;
+  letter-spacing: 1px;
 }
 
 .navLink:hover {
@@ -60,6 +61,7 @@ nice light green: #94B58B
   font-family: 'Infini';
   color: hsla(26, 5%, 28%, 1);;
   float: left;
+  letter-spacing: 1px;
   position: relative;
   margin-top: 20px;
 }
@@ -79,6 +81,7 @@ nice light green: #94B58B
   text-decoration: none;
   float: right;
   margin: 36px;
+  letter-spacing: 1px;
 }
 
 #login-dropdown-list {
@@ -141,10 +144,6 @@ nice light green: #94B58B
 .accounts-dialog input[type=password], #login-buttons input[type=password] {
   border-radius: 100px;
   background: hsla(0, 0%, 100%, 0.1);
-}
-
-.loginButtons div a {
-
 }
 
 #login-screen .dropdown-menu {

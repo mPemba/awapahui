@@ -1,0 +1,11 @@
+{
+  "public": {},
+  "private": {
+      "mailgun": {
+          "host": "smtp.mailgun.org",
+          "username": "postmaster@sandboxfb3d66b5c7764dc9889573755876171f.mailgun.org",
+          "password": "7c07e3eb9ec6c2b69fb6de109d28712d",
+          "port":25
+      }
+  }
+}
