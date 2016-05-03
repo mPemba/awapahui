@@ -50,7 +50,7 @@
 .contactPageContentContainer {
   width: 100%;
   height: 150%;
-  background: #c1c9c1;
+  background: #D7D7DB;
   padding-top: 3%;
   overflow: scroll;
 }
@@ -85,6 +85,7 @@
 .formLabel {
   font-family: 'Infini';
   font-size: 2rem;
+  margin-bottom: 5px;
 }
 
 .formContainer .formField {
@@ -94,8 +95,13 @@
   border: .5px solid #939598;
   background: hsla(0, 0%, 100%, 0.3);
   font-size: 1rem;
-  color: #efedeb;
+  color: #333333;
+  /*color: hsla(26, 5%, 28%, 1);*/
   padding: 1% 1% 1% 3%;
+}
+
+#contactSubmitButton {
+  padding: 1%;
 }
 
 .formField:hover {

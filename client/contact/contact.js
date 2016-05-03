@@ -7,12 +7,14 @@ Template.contactPage.events({
 
     var userName = event.target.name.value;
     var userEmail = event.target.email.value;
+    var userMessage = event.target.textarea.value;
 
     Meteor.call('sendEmail',
-                'michael.j.say@gmail.com',
-                userEmail,
+                'to.michael.j.say@gmail.com',
+                'from.'+userEmail,
                 'Hello from ' + userName,
-                'This is a test of Email.send.');
+                'message from user'
+              );
     }
 
 });

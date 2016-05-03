@@ -29,9 +29,7 @@ Template.shirtsPage.events({
 
     // addToCart(newShirt, function(err, res) {
     //   if (err) {
-    //     console.log('error shirts.js line 30');
     //   } else {
-    //     console.log('is it working? shirts.js line 32');
     //   }
     // });
 
